@@ -8,6 +8,7 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.2.0.1');
+  api.use('angular:angular', 'client');
   api.use('blaze-html-templates', 'client');
 
   api.imply('accounts-ui');
