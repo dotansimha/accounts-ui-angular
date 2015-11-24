@@ -10,7 +10,7 @@ AngularJS wrapper for Ian's Account-UI-Bootstrap-3 package
 angular.module('myApp', ['angular-meteor', 'accounts.ui']);
 ```
 
-- Use it in your app, for example: *(needs to be places inside ng-app)*
+- Use it in your app, for example: *(needs to be placed inside ng-app)*
 ```html
 <login-buttons></login-buttons>
 ```
