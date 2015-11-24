@@ -11,7 +11,7 @@ Package.onUse(function (api) {
   api.use('angular:angular@1.4.7', 'client');
   api.use('blaze-html-templates', 'client');
 
-  api.imply('accounts-ui');
+  api.imply('ian:accounts-ui-bootstrap-3');
 
   api.addFiles([
     'accounts-ui-angular.js',
