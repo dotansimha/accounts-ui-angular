@@ -4,7 +4,7 @@ angular.module('accounts.ui').directive('loginButtons', function() {
     scope: true,
     template: '',
     link: function(scope, element) {
-      Blaze.render(Template._loginButtons, element[0]);
+      Blaze.render(Template._loginButtons, element[0].parentElement);
     }
   }
 });

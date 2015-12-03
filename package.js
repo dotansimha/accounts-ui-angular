@@ -1,7 +1,7 @@
 Package.describe({
   name: "bruck:accounts-ui-angular",
   summary: "AngularJS wrapper for Ian's Account-UI-Bootstrap-3 package",
-  version: "0.0.4",
+  version: "0.0.6",
   documentation: 'README.md',
   git: "https://github.com/kordianbruck/accounts-ui-angular"
 });
