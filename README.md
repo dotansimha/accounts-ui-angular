@@ -14,3 +14,7 @@ angular.module('myApp', ['angular-meteor', 'accounts.ui']);
 ```html
 <login-buttons></login-buttons>
 ```
+- or, to align to the right:
+```html
+<login-buttons align="right"></login-buttons>
+```
