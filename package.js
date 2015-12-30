@@ -1,9 +1,9 @@
 Package.describe({
-  name: "bruck:accounts-ui-angular",
-  summary: "AngularJS wrapper for Ian's Account-UI-Bootstrap-3 package",
-  version: "0.0.6",
+  name: "dotansimha:accounts-ui-angular",
+  summary: "AngularJS wrapper for Meteor's Account-UI package",
+  version: "0.0.2",
   documentation: 'README.md',
-  git: "https://github.com/kordianbruck/accounts-ui-angular"
+  git: "https://github.com/dotansimha/accounts-ui-angular"
 });
 
 Package.onUse(function (api) {
@@ -11,7 +11,7 @@ Package.onUse(function (api) {
   api.use('angular:angular@1.4.7', 'client');
   api.use('blaze-html-templates', 'client');
 
-  api.imply('ian:accounts-ui-bootstrap-3@1.2.84');
+  api.imply('accounts-ui');
 
   api.addFiles([
     'accounts-ui-angular.js',

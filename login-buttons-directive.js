@@ -3,8 +3,8 @@ angular.module('accounts.ui').directive('loginButtons', function() {
     restrict: 'EA',
     scope: true,
     template: '',
-    link: function(scope, element) {
-      Blaze.render(Template._loginButtons, element[0].parentElement);
+    link: function(scope, element, attrs) {
+      Blaze.renderWithData(Template.loginButtons, {align: (attrs.align || '')}, element[0].parentElement);
     }
   }
 });
