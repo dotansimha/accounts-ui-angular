@@ -1,7 +1,7 @@
 Package.describe({
   name: "dotansimha:accounts-ui-angular",
   summary: "AngularJS wrapper for Meteor's Account-UI package",
-  version: "0.0.2",
+  version: "0.0.3",
   documentation: 'README.md',
   git: "https://github.com/dotansimha/accounts-ui-angular"
 });
