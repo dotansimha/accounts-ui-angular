@@ -1,13 +1,13 @@
 Package.describe({
   name: "dotansimha:accounts-ui-angular",
   summary: "AngularJS wrapper for Meteor's Account-UI package",
-  version: "0.0.3",
+  version: "0.0.4",
   documentation: 'README.md',
   git: "https://github.com/dotansimha/accounts-ui-angular"
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('METEOR@1.2.0.1');
+  api.versionsFrom('METEOR@1.3-rc.4');
   api.use('angular:angular@1.4.7', 'client');
   api.use('blaze-html-templates', 'client');
   api.use('tmeasday:check-npm-versions');
