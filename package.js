@@ -8,9 +8,10 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.3-rc.4');
-  api.use('angular:angular@1.4.7', 'client');
+  api.use('angular:angular@1.4.7', 'client', {weak: true});
   api.use('blaze-html-templates', 'client');
-  api.use('tmeasday:check-npm-versions');
+  api.use('ecmascript');
+  api.use('tmeasday:check-npm-versions@0.1.1');
 
   api.imply('accounts-ui');
 
