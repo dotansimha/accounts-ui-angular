@@ -1,11 +1,12 @@
-import {checkNpmVersions} from 'meteor/tmeasday:check-npm-versions';
-
 if (!window.angular) {
-  require("angular");
+  try {
+    if (Package['modules-runtime']) {
+      var require = Package['modules-runtime'].meteorInstall();
+      require('angular');
+    }
+  } catch(e) {
+    throw new Error('angular package is missing');
+  }
 }
-
-checkNpmVersions({
-  'angular': '^1.2.27'
-});
 
 angular.module('accounts.ui', []);
